@@ -10,6 +10,6 @@ public class ForSumExample {
 //		sum = sum + 3;
 //		sum = sum + 4;
 //		sum = sum + 5;
-//		System.out.println("합계는:" + sum);
+		System.out.println("합계는:" + sum);
 	}
 }
