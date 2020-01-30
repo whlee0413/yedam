@@ -9,22 +9,22 @@ public class Exercise07 {
 
 		while (run) {
 			System.out.println("======================");
-			System.out.println("              ☆하이루~☆      ");
+			System.out.println("                ");
 			System.out.println("1.예금 2.출금 3.잔액 4.종료");
 			System.out.println("======================");
 			int menu = scn.nextInt();
 			if (menu == 1) {
-				System.out.println("돈 얼마 넣을꺼임?");
+				System.out.println("출금?");
 				int inputAmt = scn.nextInt();
 				balance = balance + inputAmt;
 			} else if (menu == 2) {
-				System.out.println("돈 얼마 뽑을꺼임?");
+				System.out.println("입금?");
 				int inputAmt = scn.nextInt();
 				balance = balance + inputAmt;
 			} else if(menu == 3) {
 				System.out.println("잔액은" + balance);
 			} else if(menu == 4) {
-				System.out.println("빠이~~");
+				System.out.println("");
 				run = false;
 			}
 		}
