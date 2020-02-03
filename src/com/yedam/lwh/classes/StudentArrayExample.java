@@ -1,6 +1,17 @@
 package com.yedam.lwh.classes;
 
 public class StudentArrayExample {
+	static Student[] stdAry = new Student[3];
+	
+	public static Student getStudent(String name) {
+		Student st1 = null;
+		for(int i=0; i<stdAry.length; i++) {
+			if (stdAry[i].getName().equals(name))
+			    st1 = stdAry[i];
+	
+		}
+		return st1;
+	}
 	public static void main(String[] args) {
 		
 		
@@ -35,9 +46,18 @@ public class StudentArrayExample {
 		stdAry[1] = stdAry[2];
 		stdAry[2] = stdAry[0];
 		
-		for(int i=0; i<stdAry.length; i++) {
-//			if (stdAry[i].name.equals("choi")) choi만 실행하고싶을때 조건.
-			System.out.println(stdAry[i].getName()+ " " + stdAry[i].getAge());
-		}
+//		for(int i=0; i<stdAry.length; i++) {
+//			if (stdAry[i].getName().equals("choi")) //choi만 실행하고싶을때 조건.
+////			System.out.println(stdAry[i].getName()+ " " + stdAry[i].getAge());
+//		}
+		
+
+	
+		Student s1 = getStudent("choi");
+		System.out.println(s1.toString());
+	
+
+		
 	}
+	
 }

@@ -7,6 +7,11 @@ public class Student {
 	private int  height;
 	private int  weight;
 
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", height=" + height + ", weight=" + weight + "]";
+	}
+
 	// 생성자(인스턴스를 만들면서 필드값을 초기화)
 	Student() {
 	}
