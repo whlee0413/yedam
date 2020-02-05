@@ -12,4 +12,10 @@ public interface EmpService {
 	
 	//삭제
 	public void delEmp(int empNo, Employee[] emps);
+	
+	//DB 연결조회기능
+	public void searchEmployees();
+	
+	//DB 입력기능
+	public void insertEmployees(Employees emp);
 }
